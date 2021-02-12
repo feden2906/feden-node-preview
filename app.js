@@ -32,7 +32,7 @@
 
 
 // -------- # 4
-const fs = require('fs');
+// const fs = require('fs');
 //
 // for (let i = 0; i < 10; i++) {
 //   fs.writeFile('./text.txt', `HELLO ${i}\n`, {flag: 'a'}, (err) => {
