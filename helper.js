@@ -1,15 +1,18 @@
-const logger = (params) => {
-  console.log(params)
-}
+// -------- # 1
+// const logger = (params) => {
+//   console.log(params)
+// }
+//
+// class User {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   sayHell() {
+//     console.log(`${this.name} say hello to u`)
+//   }
+// }
+//
+// module.exports = {logger, User}
 
-class User {
-  constructor(name) {
-    this.name = name;
-  }
 
-  sayHell() {
-    console.log(`${this.name} say hello to u`)
-  }
-}
-
-module.exports = {logger, User}
+// -------- # 2
