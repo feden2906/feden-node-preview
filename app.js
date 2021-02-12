@@ -1,4 +1,3 @@
-
 // -------- # 1
 // const {logger, User} = require('./helper');
 //
@@ -9,15 +8,24 @@
 
 
 // -------- # 2
-require('./helper');
+// require('./helper');
+//
+// global.age = 25;
+// global.test = 'Hello World';
+//
+// console.log(age);
+// console.log(test);
+// console.log(data);
+//
+// test22('Dima');
 
-global.age = 25;
-global.test = 'Hello World';
 
-console.log(age);
-console.log(test);
-console.log(data);
+// -------- # 3
+const ee = require('./helper');
 
-test22('Dima');
+ee.emit('test', 22, true, 'Maksym');
+ee.emit('test');
+ee.emit('test', 33, false, 'Tamara');
 
-
+ee.emit('oneTimeEvent');
+ee.emit('oneTimeEvent');

@@ -16,8 +16,24 @@
 
 
 // -------- # 2
-global.data = '12.02.21'
+// global.data = '12.02.21'
+//
+// global.test22 = (userName) => {
+//   console.log(`Name is ${userName}`)
+// }
 
-global.test22 = (userName) => {
-  console.log(`Name is ${userName}`)
-}
+
+// -------- # 3
+const {EventEmitter} = require('events');
+
+const ee = new EventEmitter();
+
+ee.on('test', (num='невідомо', bool='невідомо', name='невідомо') => {
+  console.log(`Test start ${name}. He has ${num} age. Is married - ${bool}`);
+});
+
+ee.once('oneTimeEvent', () => {
+  console.log('Working');
+});
+
+module.exports = ee;
