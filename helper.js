@@ -24,16 +24,20 @@
 
 
 // -------- # 3
-const {EventEmitter} = require('events');
+// const {EventEmitter} = require('events');
+//
+// const ee = new EventEmitter();
+//
+// ee.on('test', (num='невідомо', bool='невідомо', name='невідомо') => {
+//   console.log(`Test start ${name}. He has ${num} age. Is married - ${bool}`);
+// });
+//
+// ee.once('oneTimeEvent', () => {
+//   console.log('Working');
+// });
+//
+// module.exports = ee;
 
-const ee = new EventEmitter();
 
-ee.on('test', (num='невідомо', bool='невідомо', name='невідомо') => {
-  console.log(`Test start ${name}. He has ${num} age. Is married - ${bool}`);
-});
+// -------- # 4
 
-ee.once('oneTimeEvent', () => {
-  console.log('Working');
-});
-
-module.exports = ee;
