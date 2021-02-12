@@ -9,3 +9,15 @@
 
 
 // -------- # 2
+require('./helper');
+
+global.age = 25;
+global.test = 'Hello World';
+
+console.log(age);
+console.log(test);
+console.log(data);
+
+test22('Dima');
+
+

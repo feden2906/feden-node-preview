@@ -16,3 +16,8 @@
 
 
 // -------- # 2
+global.data = '12.02.21'
+
+global.test22 = (userName) => {
+  console.log(`Name is ${userName}`)
+}
