@@ -21,14 +21,15 @@
 
 
 // -------- # 3
-// const ee = require('./helper');
+// const {hoho, hehe} = require('./helper');
+// // console.log(hoho);
+// hehe();
+// hoho.emit('test', 22, true, 'Maksym');
+// hoho.emit('test');
+// hoho.emit('test', 33, false, 'Tamara');
 //
-// ee.emit('test', 22, true, 'Maksym');
-// ee.emit('test');
-// ee.emit('test', 33, false, 'Tamara');
-//
-// ee.emit('oneTimeEvent');
-// ee.emit('oneTimeEvent');
+// hoho.emit('oneTimeEvent');
+// hoho.emit('oneTimeEvent');
 
 
 // -------- # 4
@@ -69,3 +70,49 @@
 // fs.unlink('./helper.js', (err) => { });
 //
 // fs.rmdir('./video', (err) => { });
+
+
+// -------- # 5
+
+
+// -------- # 6
+const express = require('express');
+
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+app.get('/', (req, res) => {
+  res.end('Node is great!')
+});
+
+app.get('/hello/:text', (req, res) => {
+  const params = req.params
+  res.end(`Hello! ${params.text}`)
+});
+
+app.post('/hello', (req, res) => {
+  console.log(req.body);
+  res.end('POST REQUEST')
+})
+
+
+app.listen(3000, () => {
+  console.log('server is running on 3000')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

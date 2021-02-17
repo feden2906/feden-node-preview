@@ -36,8 +36,14 @@
 //   console.log('Working');
 // });
 //
-// module.exports = ee;
+// module.exports.hoho = ee;
+// module.exports.hehe = ()=>console.log('HEHEHEHE');
 
 
 // -------- # 4
 
+
+// -------- # 5
+
+
+// -------- # 6
